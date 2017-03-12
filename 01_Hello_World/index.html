@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+    .bluetext {
+      color: blue;
+    }
+    .greentext {
+      color: green;
+    }
+    </style>
     <script>
-      // JavaScript function definition here
-    </script> 
+      function altText() {
+        document.getElementById("rText").innerHTML = "HA! YOU THOUGHT THE BUTTON DID SOMETHING!";
+      }
+    </script>
   </head>
-  
+
   <body>
-    <!-- Your page here (can include more script tags) -->
-    
+    <h1 id="hi"> Hello, I am a poorly made site</h1>
+
+    <p id="rText" class="greentext"> A poorly made site indeed :c </p>
+
+    <button type="button" onclick="altText()">Oh look, a button.</button>
   </body>
 </html>
